@@ -1,0 +1,1056 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-currency,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector,
+.currency-selector {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 5px; 
+}
+
+.currency-selector {
+  margin-right: 20px;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+.top-right > span {
+  margin-right: 10px;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: normal; 
+  color: #808080; 
+}
+
+.social-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+.language-selector img {
+  width: 20px; 
+  height: 20px; 
+}
+
+header span {
+  color: #808080;
+}
+
+/* Styling the search-bar and its items */ 
+
+.search-bar {
+  background-color: #f2f2f2; 
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.search-bar img{
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+.phone-logo {
+  display: inline-flex;
+  align-items: right; 
+  margin-right: 0px; 
+}
+
+.phone-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.call-us {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+}
+
+.call-us-text {
+  margin-left: 0px;
+  margin-bottom: 0px; 
+  font-weight: normal;
+  color: #808080; 
+}
+
+.phone-number {
+  font-size: 16px; 
+  color: #000000; 
+  font-weight: bold; 
+  margin-top: 0px;
+}
+
+.shopping-icons {
+  display: flex;
+  align-items: right;
+}
+
+.shopping-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Styling the navigation row */ 
+
+.navigation-row {
+  background-color: #000000;
+  padding: 10px 20px;
+  text-align: center; 
+}
+
+.navigation-row ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.navigation-row li {
+  margin-right: 20px;
+}
+
+.navigation-row li:last-child {
+  margin-right: 0; 
+}
+
+.navigation-row a {
+  text-decoration: none;
+  color: #ffffff; 
+  position: relative;
+}
+
+.navigation-row a span {
+  margin-left: 5px; 
+  font-size: 12px;  
+}
+
+.navigation-row a.peach {
+  color: #ff9966; 
+}
+
+/* Styling the image row with text overlayed */ 
+.image-row{
+ position: relative;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-row::before,
+.image-row::after {
+  content: "<";
+  color: gray; 
+  font-size: 24px; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  display: inline-block;
+  line-height: 1; 
+}
+
+.image-row::after {
+  content: ">";
+  right: 100px; 
+}
+
+.image-row::before {
+  left: 100px; 
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.upper-text {
+  font-family: monospace;
+  color: #808080; 
+  font-size: 20px;
+  margin: 0;
+}
+
+.lower-text {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.lower-text .peach {
+  color: #ff9966; 
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.price-text {
+  font-size: 12px;
+  margin: -10px 3px 10px;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.price {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.price sup {
+  font-size: 16px;
+}
+
+.shop-now {
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  left: 60px; 
+  bottom: 20px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling additional row */
+
+.additional-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: calc(80% - 40px);
+  margin: 0 auto; 
+  position: relative; 
+}
+
+.additional-row::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0.5px; 
+  background-color: gray; 
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px; 
+}
+
+.icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+}
+
+.text {
+  color: #000000; 
+  font-weight: bold; 
+}
+
+.separator {
+  color: #808080; 
+  margin: 0 10px; 
+}
+
+/* Styling the shop-shoes row */
+.shop-shoes-row {
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.shop-shoes-row img {
+  margin-right: 5px; 
+  width: 20px;
+  height: 20px;
+}
+
+.shop-shoes-row span {
+  color: gray;
+  margin: 0 5px;
+}
+
+/* Styling the row that contains images and description of the item being sold that is men shoes */
+
+.menshoesblack-details-row {
+  display: flex;
+  padding: 20px;
+}
+
+.menshoesblack-image {
+  width: 50%;
+  position: relative;
+  display: inline-block; 
+  padding: 10px; 
+}
+
+
+.menshoesblack-image img {
+  width: 90%;
+  height: auto;
+
+}
+
+.text-menshoes-overlay {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  background-color: red; /* This makes the circle background red */
+  color: white; /*This makes the text inside circle white*/
+  padding: 5px; 
+  border-radius: 50%; /* This creates a circle */
+}
+
+.menshoesblack-details {
+  width: 50%;
+  padding-left: 20px;
+}
+
+.menshoesblack-title {
+  font-weight: bold;
+  color: black;
+}
+
+.menshoesblack-rating {
+  color: gray;
+}
+
+.menshoesblack-rating span {
+  margin-right: 5px;
+}
+
+.star-menshoes-description {
+  font-size: 16px;
+}
+
+.menshoes-price {
+  margin-top: 10px;
+}
+
+.previous-menshoes-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.current-menshoes-price {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+.menshoesblack-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.menshoesblack-description p {
+  color: gray;
+  margin-top: 10px;
+}
+
+/* */
+
+.menshoesblack-description {
+  border-bottom: 1px solid gray; /* This adds a gray border below */
+  margin-bottom: 10px;
+}
+
+.quantity-button {
+  background-color: white; 
+  color: black; 
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px; /* This adds margins between the buttons */
+}
+
+.quantity-button span {
+  padding: 10px 20px 10px; 
+  border-right: 1px solid black; 
+  border-top: 1px solid black; 
+  border-bottom: 1px solid black; 
+  border-left: 1px solid black; 
+}
+
+.add-to-cart-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px;
+  border: none;
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.add-to-cart-button img {
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px; /* This adds margin on the right*/
+  filter: invert(100%); /* This inverts the colors to make the image white*/
+}
+
+/* This part styles the social icons */
+
+.social-icons-row-menshoesblack {
+  display: flex;
+  align-items: center; 
+  margin-top: 20px;
+  border-top: 1px solid gray; 
+}
+
+.social-icon-menshoesblack {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  background-color: white;
+  border: 2px solid black;
+  box-sizing: border-box; 
+}
+
+.social-icon-menshoesblack img {
+  width: 100%;
+  height: auto;
+}
+
+/* */
+
+.wishlist-icon {
+  margin-right: 5px; 
+  margin-top: 20px;
+}
+
+.wishlist-icon img{
+  width: 20px;
+  height: 20px;
+}
+
+.wishlist-text {
+  font-weight: bold;
+  margin-top: 20px;
+  color: black;
+}
+
+/* */
+.mens-different-shoes-row {
+  display: flex;
+  align-items: center;
+}
+
+.mens-different-shoes-images {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.mens-different-shoes-images img {
+  width: 110px;
+  height: 110px;
+  margin-left: 30px;
+}
+
+/* Styling the product details row */
+.product-details-row {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 50%;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product-detail {
+  flex-grow: 1;
+  color: gray;
+}
+
+.bold-text {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 5px; 
+}
+
+.bold-text:first-child {
+  text-decoration: underline; /* This underlines the first product detail which is DESCRIPTION */
+}
+
+/* This styles the row that includes a randow words in latin paragraph */
+
+.lorem-row {
+  padding: 20px;
+  border-top: 1px solid gray; 
+}
+
+.lorem-text {
+  font-size: 16px;
+  color: gray;
+}
+
+/* This styles the checked list part and its items */
+
+.checked-list {
+  padding: 20px;
+}
+
+.checked-item {
+  list-style-type: none; 
+  padding-left: 30px; 
+  position: relative;
+  margin-bottom: 10px; 
+  font-size: 16px;
+  color: gray;
+}
+
+.checked-item::before {
+  content: "\2713"; /* This is the unicode character for checkmark */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px; /* This adjusts the checkmark size */
+  color: black; /* This decides the color of the checkmark */
+  margin-right: 5px; /* This adds some space between checkmark and text */
+}
+
+/* Styling row with random text */
+
+.random-row {
+  padding: 20px;
+}
+
+.random-text {
+  font-size: 16px;
+  color: gray;
+}
+
+/* Styling the row that displays the related items */
+.related-products-row {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+
+.related-products-heading {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.related-items-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray; 
+  margin-bottom: 20px;
+}
+
+.related-item {
+  width: 23%; 
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.text-relatedproduct-overlay {
+  position: absolute;
+  top: 10px; 
+  left: 10px; 
+  background-color: red;
+  color: white; 
+  padding: 5px; 
+  border-radius: 50%; 
+}
+
+.related-item img {
+  width: 100%;
+  height: auto;
+}
+
+.category {
+  color: #888;
+  font-size: 14px;
+}
+
+.product-title {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.star-rating {
+  color:#888; 
+  font-size: 14px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 0px;
+}
+
+/* Styling the featured products part */
+
+.product-columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.featured-product-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-product{
+  display: flex;
+  margin-right: 40px;
+}
+
+.featured-product img {
+  width: 100px; 
+  height: auto; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.featured-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.featured-rating {
+  margin-top: 5px;
+  color:#888;
+}
+
+.featured-price {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Styling the bestselling products part */
+.bestselling-products-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestsellingproduct {
+  display: flex;
+  margin-right: 40px;
+}
+
+.bestsellingproduct img {
+  width: 100px; 
+  height: auto;   
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+.bestselling-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.bestselling-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.bestselling-rating {
+  margin-top: 5px;
+  color:#888;
+}
+
+.bestselling-price {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Styling the latest products part */
+
+.latest-products-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.latestprod {
+  display: flex;
+  margin-right: 40px;
+}
+
+.latestprod img {
+  width: 100px; 
+  height: auto; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.latest-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-description {
+  margin-top: 10px;
+  color: black;
+  font-size: 14px;
+}
+
+.latest-rating {
+  margin-top: 5px;
+  color:#888;
+}
+
+.latest-price {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Styling the top rated products part */
+
+.toprated-products-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.toprated-product {
+  display: flex;
+  margin-right: 40px;
+}
+
+.toprated-product img {
+  width: 100px; 
+  height: auto; 
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.latest-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.toprated-description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.toprated-rating {
+  margin-top: 5px;
+  color:#888;
+}
+
+.toprated-price {
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* STYLING FOOTER */
+
+.dark-footer {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid gray; 
+  background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+}
+
+.footer-left-section {
+  flex: 1;
+  width: 40%;
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.footer-left-section h4{
+  margin-bottom: 20px; 
+}
+
+.about-us {
+  flex: 1; 
+}
+
+/* Styling contact column */
+
+.contact-column {
+  margin-bottom: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5px; 
+}
+
+.contact-column p {
+  margin: 30px;
+  display: inline-block;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.contact-info h4{
+  margin-top: 20px;
+}
+
+/* Styling the left section of footer */
+
+.footer-left-section img {
+    max-width: 100px; 
+    margin-bottom: 10px;
+}
+
+.footer-left-section p {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-left-section a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+
+/* Styling social icons on footer */
+
+.footer-social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid white; 
+}
+
+.footer-social-icon img {
+  width: 30px; 
+  height: auto;
+  filter: invert(100%); 
+}
+
+/*Styling footer's right part */
+.footer-right-product-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-right-product img {
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px;
+}
+
+.footer-right-product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-product-stars {
+  color: gray;
+}
+
+.footer-right-product-price {
+  margin-left: 10px;
+}
+
+/* Styling footer's end section */
+.footer-end-section {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-right;
+  margin-left: 30px;
+}
+
+.footer-end-section img {
+  width: 20px;
+  height: auto; 
+  margin-right: 100px;
+  filter: invert(100%); 
+}
+
+.twitter-unavailable {
+  color: gray;
+  font-size: 15px; 
+  margin-top: 10px;
+}
+
+.twitter-follow-us{
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Styling footer's second part */
+.dark-footer-second-part {
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+  border-bottom: 1px solid gray; 
+}
+
+.second-footer-section {
+  width: 25%; 
+  margin-top: 10px;
+}
+
+.second-footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.second-footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.second-footer-section ul li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Styling footer's third part */
+.footer-third-part{
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+}
+
+.footer-left-third-part{
+ text-align: left;
+ width: 50%;
+}
+
+.footer-third-part p::before {
+  content: "\00A9"; 
+  margin-right: 5px; 
+}
+
+.footer-third-part p{
+  color: gray;
+  font-size: 15px;
+  font-style: normal;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Styling the right side of footer's third part */
+.footer-right-third-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 50%;
+}
+
+.footer-right-third-part img {
+  width: 50px; 
+  height: 50px; 
+  margin-left: 10px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  background-color: #888; 
+  padding: 5px; 
+  filter: invert(100%); 
+}

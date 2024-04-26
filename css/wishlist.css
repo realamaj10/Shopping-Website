@@ -1,0 +1,663 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-currency,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector,
+.currency-selector {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 5px; 
+}
+
+.currency-selector {
+  margin-right: 20px;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+.top-right > span {
+  margin-right: 10px;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: normal; 
+  color: #808080; 
+}
+
+.social-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+.language-selector img {
+  width: 20px; 
+  height: 20px; 
+}
+
+header span {
+  color: #808080;
+}
+
+/* Styling the search bar and its items */ 
+
+.search-bar {
+  background-color: #f2f2f2; 
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.search-bar img{
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+.phone-logo {
+  display: inline-flex;
+  align-items: right; 
+  margin-right: 0px; 
+}
+
+.phone-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.call-us {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+}
+
+.call-us-text {
+  margin-left: 0px;
+  margin-bottom: 0px; 
+  font-weight: normal;
+  color: #808080; 
+}
+
+.phone-number {
+  font-size: 16px; 
+  color: #000000; 
+  font-weight: bold; 
+  margin-top: 0px;
+}
+
+.shopping-icons {
+  display: flex;
+  align-items: right;
+}
+
+.shopping-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Styling the navigation row and its items */ 
+
+.navigation-row {
+  background-color: #000000;
+  padding: 10px 20px;
+  text-align: center; 
+}
+
+.navigation-row ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.navigation-row li {
+  margin-right: 20px;
+}
+
+.navigation-row li:last-child {
+  margin-right: 0; 
+}
+
+.navigation-row a {
+  text-decoration: none;
+  color: #ffffff; 
+  position: relative;
+}
+
+.navigation-row a span {
+  margin-left: 5px; 
+  font-size: 12px;  
+}
+
+.navigation-row .orange a {
+  color: #ff9966; 
+}
+
+/* Styling the image row and its items */ 
+.image-row{
+ position: relative;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-row::before,
+.image-row::after {
+  content: "<";
+  color: gray; 
+  font-size: 24px; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  display: inline-block;
+  line-height: 1; 
+}
+
+.image-row::after {
+  content: ">";
+  right: 100px; 
+}
+
+.image-row::before {
+  left: 100px; 
+}
+
+/* Styling the text overlayed in the image in image row above */
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.upper-text {
+  font-family: monospace;
+  color: #808080; 
+  font-size: 20px;
+  margin: 0;
+}
+
+.lower-text {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.lower-text .peach {
+  color: #ff9966; 
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.price-text {
+  font-size: 12px;
+  margin: -10px 3px 10px;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.price {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.price sup {
+  font-size: 16px;
+}
+
+.shop-now {
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  left: 60px; 
+  bottom: 20px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling additional row */
+
+.additional-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: calc(80% - 40px);
+  margin: 0 auto; 
+  position: relative; 
+}
+
+.additional-row::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0.5px; 
+  background-color: gray; 
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px; 
+}
+
+.icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+}
+
+.text {
+  color: #000000; 
+  font-weight: bold; 
+}
+
+.separator {
+  color: #808080; 
+  margin: 0 10px; 
+}
+
+/* Styling the Wishlist Row */
+
+.wishlist-row {
+  background-color:#ccc;
+  text-align: center;
+  padding: 20px 0; 
+}
+
+.wishlist-content {
+  display: inline-block; 
+}
+
+.choice {
+  margin-bottom: 10px;
+}
+
+.blue-text {
+  color: blue; 
+  font-size: 15px;
+}
+
+.gray-text {
+  color: gray; 
+  font-size: 15px;
+}
+
+.wishlist-title {
+  font-weight: bold; 
+  color: black; 
+  font-size: 30px;
+}
+
+/* This styles my wishlist row */
+.my-wishlist-row {
+  text-align: left;
+  padding: 20px 0; 
+  margin-left: 10px;
+}
+
+.my-wishlist-row h3{
+  font-weight: bold; 
+  color: black; 
+}
+
+/* This styles the items on my wishlist */
+.wishlist-info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 1px solid gray; /* This adds border below */
+  padding: 10px 0; 
+  margin-bottom: 20px;
+}
+
+.info-item {
+  flex: 1; /* This means that each item takes equal space */
+  text-align: center; 
+  font-size: 15px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.wishlist-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  border-bottom: 1px solid #ccc; 
+  padding: 10px 0;
+}
+
+.wishlist-item-column {
+  flex: 1;
+  text-align: left;
+  padding: 12px;
+}
+
+.wishlist-item-column img {
+  width: 100px; 
+  height: auto; 
+}
+/* Styling the buttons */
+.actions {
+  display: flex;
+}
+
+.quick-view-btn,
+.add-to-cart-btn,
+.select-option-btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.quick-view-btn {
+  background-color: #ccc;
+  color: black;
+  font-size: 15px;
+}
+
+.add-to-cart-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+.select-option-btn{
+  background-color: black;
+  color: white;
+  font-size: 14px;
+}
+
+/* Hover effect for buttons */
+.quick-view-btn:hover,
+.add-to-cart-btn:hover {
+  background-color: #666;
+}
+
+
+/*STYLING THE FOOTER*/
+
+.dark-footer {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid gray; 
+  background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+}
+
+.footer-left-section {
+  flex: 1;
+  width: 40%;
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.footer-left-section h4{
+  margin-bottom: 20px; 
+}
+
+.about-us {
+  flex: 1; 
+}
+
+.contact-column {
+  margin-bottom: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5px; 
+}
+
+.contact-column p {
+  margin: 30px;
+  display: inline-block;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.contact-info h4{
+  margin-top: 20px;
+}
+
+.footer-left-section img {
+    max-width: 100px; 
+    margin-bottom: 10px;
+}
+
+.footer-left-section p {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-left-section a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid white; 
+}
+
+.footer-social-icon img {
+  width: 30px; 
+  height: auto;
+  filter: invert(100%); 
+}
+
+.footer-right-product-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-right-product img {
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px;
+}
+
+.footer-right-product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-product-stars {
+  color: gray;
+}
+
+.footer-right-product-price {
+  margin-left: 10px;
+}
+
+.footer-end-section {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-right;
+  margin-left: 30px;
+}
+
+.footer-end-section img {
+  width: 20px;
+  height: auto; 
+  margin-right: 100px;
+  filter: invert(100%); 
+}
+
+.twitter-unavailable {
+  color: gray;
+  font-size: 15px; 
+  margin-top: 10px;
+}
+
+.twitter-follow-us{
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.dark-footer-second-part {
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+  border-bottom: 1px solid gray; 
+}
+
+.second-footer-section {
+  width: 25%; 
+  margin-top: 10px;
+}
+
+.second-footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.second-footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.second-footer-section ul li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.footer-third-part{
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+}
+
+.footer-left-third-part{
+ text-align: left;
+ width: 50%;
+}
+
+.footer-third-part p::before {
+  content: "\00A9"; 
+  margin-right: 5px; 
+}
+
+.footer-third-part p{
+  color: gray;
+  font-size: 15px;
+  font-style: normal;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-right-third-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 50%;
+}
+
+.footer-right-third-part img {
+  width: 50px; 
+  height: 50px; 
+  margin-left: 10px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  background-color: #888; 
+  padding: 5px; 
+  filter: invert(100%); 
+}

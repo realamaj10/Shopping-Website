@@ -1,0 +1,1106 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the header*/
+header {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Styling the language and currency selectors*/
+.language-currency,
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.language-selector,
+.currency-selector {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; 
+  padding: 5px; 
+}
+
+.currency-selector {
+  margin-right: 20px;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
+.top-right > span {
+  margin-right: 10px;
+}
+
+.separator {
+  margin: 0 5px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: normal; 
+  color: #808080; 
+}
+
+.social-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+.language-selector img {
+  width: 20px; 
+  height: 20px; 
+}
+
+header span {
+  color: #808080;
+}
+
+/*Styling the search bar, phone logo and the other logos*/ 
+
+.search-bar {
+  background-color: #f2f2f2; 
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.search-bar input[type="text"] {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.search-bar img{
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+.phone-logo {
+  display: inline-flex;
+  align-items: right; 
+  margin-right: 0px; 
+}
+
+.phone-logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.call-us {
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end;
+}
+
+.call-us-text {
+  margin-left: 0px;
+  margin-bottom: 0px; 
+  font-weight: normal;
+  color: #808080; 
+}
+
+.phone-number {
+  font-size: 16px; 
+  color: #000000; 
+  font-weight: bold; 
+  margin-top: 0px;
+}
+
+.shopping-icons {
+  display: flex;
+  align-items: right;
+}
+
+.shopping-icons img {
+  margin-right: 5px;
+  width: 20px; 
+  height: 20px; 
+}
+
+/* Styling the navigation row */ 
+
+.navigation-row {
+  background-color: #000000;
+  padding: 10px 20px;
+  text-align: center; 
+}
+
+.navigation-row ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex; 
+  align-items: center; 
+}
+
+.navigation-row li {
+  margin-right: 20px;
+}
+
+.navigation-row li:last-child {
+  margin-right: 0; 
+}
+
+.navigation-row a {
+  text-decoration: none;
+  color: #ffffff; 
+  position: relative;
+}
+
+.navigation-row a span {
+  margin-left: 5px; 
+  font-size: 12px;  
+}
+
+.navigation-row .buy a {
+  color: #ff9966; 
+}
+
+/* Styling the image row */ 
+.image-row{
+ position: relative;
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-row::before,
+.image-row::after {
+  content: "<";
+  color: gray; 
+  font-size: 24px; 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  display: inline-block;
+  line-height: 1; 
+}
+
+.image-row::after {
+  content: ">";
+  right: 100px; 
+}
+
+.image-row::before {
+  left: 100px; 
+}
+
+/* Styling the text overlayed in the image */
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 30%; 
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.upper-text {
+  font-family: monospace;
+  color: #808080; 
+  font-size: 20px;
+  margin: 0;
+}
+
+.lower-text {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.lower-text .peach {
+  color: #ff9966; 
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Lucida Handwriting", cursive;
+}
+
+.price-text {
+  font-size: 12px;
+  margin: -10px 3px 10px;
+  font-weight: bold;
+  color: black;
+  text-align: right;
+}
+
+.price {
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.price sup {
+  font-size: 16px;
+}
+
+.shop-now {
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  position: relative;
+  left: 60px; 
+  bottom: 20px; 
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Styling the additional row below image row */
+
+.additional-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: calc(80% - 40px);
+  margin: 0 auto; 
+  position: relative; 
+}
+
+.additional-row::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 0.5px; 
+  background-color: gray; 
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  font-size: 14px; 
+}
+
+.icon {
+  width: 20px; 
+  height: 20px; 
+  margin-right: 5px; 
+}
+
+.text {
+  color: #000000; 
+  font-weight: bold; 
+}
+
+.separator {
+  color: #808080; 
+  margin: 0 10px; 
+}
+
+/* Styling container that is made of table container which includes left table and bottom table */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5px; 
+  background-color: gray; 
+  z-index: -1;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.left-table,
+.bottom-table {
+  flex: 1;
+}
+
+/* Styling left table */
+
+.left-table {
+  display: block;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 160px; 
+  border-left: 1px solid #808080; 
+  border-right: 1px solid #808080; 
+}
+
+.left-table tr.peach {
+  background-color:coral;
+  color: #fff; 
+  font-display:inherit;
+  font-size: larger;
+}
+
+.left-table td {
+  padding: 10px; 
+  border-left: 1px solid #808080; 
+  border-bottom: 1px solid #808080;
+}
+
+.left-table td:not(:last-child) {
+  border-right: 1px solid #808080; 
+}
+
+.left-table tr.peach td:not(:first-child) {
+  border-left: none;
+}
+
+.left-table tr:last-child td {
+  border-bottom: 1px solid #808080;
+}
+
+.left-table tr td:first-child {
+  padding-left: 20px; 
+}
+
+.left-table tr td:first-child img {
+  margin-right: 10px; 
+}
+
+.left-table tr td {
+  font-weight: bolder; 
+  color: gray;
+  font-size: smaller;
+}
+
+.left-table tr.peach td:first-child {
+  color: #fff; 
+}
+
+/* Styling bottom table */
+
+.bottom-table {
+  margin-top: 1px; 
+  background-color: white;
+  display: block;
+  width: 70%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 160px; 
+}
+
+.bottom-cell {
+  width: calc(100% - 20px); 
+  padding: 0px;
+  border-top: 1px solid transparent; 
+  text-align: center;
+}
+
+.bottom-cell img {
+  width: 50px; 
+  margin: 10px 50px; 
+}
+
+.bold-black {
+  font-weight: bold;
+  color: #000; 
+  text-align: center; 
+  display: block; 
+  margin: 10px 50px 10px; 
+}
+
+.bold-gray {
+  font-weight: bold;
+  color: #808080; 
+  text-align: center; 
+  display: block;
+  margin: 10px 50px 10px; 
+}
+
+.gray-text {
+  color: #808080; 
+  margin: 10px 50px 10px;
+  text-align: center; 
+  display: block; 
+}
+
+/* Styling .recent-products-container that includes recent-products class and product-row class */
+.recent-products-container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.recent-products,
+.product-row{
+  flex: 1;
+}
+
+.recent-products {
+  text-align: center;
+}
+
+.recent-products h2 {
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.recent-products-description {
+  color: gray;
+  margin-bottom: 2px;
+}
+
+.product-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: calc(33.33% - 20px); 
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product-category {
+  color: #808080;
+  font-size: 12px;
+}
+
+.product-description {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.product-rating {
+  margin-top: 5px;
+}
+
+.product-price {
+  font-weight: bold;
+  margin-top: 5px;
+  display: block;
+}
+
+.product-like {
+  margin-top: 5px;
+  display: inline;
+}
+
+/* Styling banner row */
+.banner-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.banner {
+  position: relative;
+  width: calc(33.33% - 10px);
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 20px;
+}
+
+.banner-text-overlay p {
+  margin: 5px 0;
+}
+
+.color-text {
+  font-size: 18px; 
+  font-weight: italic; 
+  color: orange;
+}
+
+.banner-price-text {
+  font-size: 20px;
+}
+
+.banner-shop-now {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* Styling sale row */
+
+.sale-row {
+  margin-bottom: 20px; 
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.sale-text {
+  text-align: center;
+}
+
+.sale-title {
+  font-size: 24px; 
+  font-weight: bold; 
+  color: black;
+}
+
+.sale-description {
+  font-size: 16px; 
+  color: #888;
+}
+
+
+/* Styling images on sale row which includes the images and the information below them */
+
+.images-on-sale-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  text-align: center;
+}
+
+.sale-image-container {
+  width: calc(16.66% - 20px); 
+  position: relative;
+  margin-right: 20px; 
+  margin-bottom: 20px; 
+}
+
+.sale-image-container img {
+  max-width: 100%; 
+  height: auto; 
+  display: block; 
+}
+
+.sale-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.category-info {
+  background-color:white;
+  padding: 2px;
+  font-size: 12px;
+  color: gray;
+}
+
+.sale-description {
+  font-weight: bold;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+.star{
+  color: gainsboro;
+}
+
+.sale-items-price {
+  margin-top: 5px;
+}
+
+.previous-price {
+  text-decoration: line-through;
+  margin-right: 5px;
+  color: gray;
+}
+
+.now-price {
+  color: black;
+  font-weight: bold;
+}
+
+/* Styling the big banner with text overlayed */
+
+ .big-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.big-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: left;
+}
+
+.upper {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.lower {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.percentage {
+  font-size: 82px;
+  font-weight: bold;
+  display: inline-block; 
+  margin-bottom: 10px;
+}
+
+.vertical-text {
+  position: absolute;
+  top: 70%;
+  left: calc(60% + 30px);
+  transform: translateY(-50%);
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: left;
+}
+
+/* Styling popular row and its images with information below */
+.popular-row {
+  display: inline;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.popular-title {
+  font-size: 24px;
+  color: black;
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  align-items: center;
+}
+
+.popular-description {
+  font-size: 15px; 
+  color:grey;
+  align-items: left;
+  margin-bottom: 10px; 
+}
+
+.images-on-popular-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.popular-image-container {
+  width: calc(16.66% - 20px);
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px; 
+}
+
+.popular-image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.popular-discount {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.popular-category-info {
+  background-color:white;
+  padding: 2px;
+  font-size: 12px;
+  color: gray;
+}
+
+.popular-sale-description {
+  font-weight: bold;
+}
+
+.rating {
+  margin-top: 5px;
+}
+
+.star{
+  color: gainsboro;
+}
+
+.popular-items-price {
+  margin-top: 5px;
+}
+
+.popular-previous-price {
+  text-decoration: line-through;
+  margin-right: 5px;
+  color: gray;
+}
+
+.popular-now-price {
+  color: black;
+}
+
+
+/* Styling the subscription row */
+
+.subscribe-row {
+  display: flex;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.subscribe-info {
+  width: 50%;
+}
+
+.subscribe-title {
+  font-weight: bold;
+  color: #000; 
+  text-align: center;
+}
+
+.subscribe-description {
+  color: #808080; 
+  text-align: center;
+}
+
+.subscribe-form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  margin-right: 10px;
+}
+
+.subscribe-button {
+  padding: 10px 20px;
+  background-color: #ff9966; 
+  color: #fff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-button:hover {
+  background-color: #ff8040;
+}
+
+.brand-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.brand-row img {
+  max-width: 100px; 
+  height: auto; 
+}
+
+/* Styling the footer */
+
+.dark-footer {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid gray; 
+  background-color: #333; 
+    color: #fff; 
+    padding: 20px;
+}
+
+.footer-left-section {
+  flex: 1;
+  width: 40%;
+  display: block;
+  justify-content: space-between;
+  align-items: flex-start; 
+}
+
+.footer-left-section h4{
+  margin-bottom: 20px; 
+}
+
+.about-us {
+  flex: 1; 
+}
+
+/* Styling the footer's contact column */
+
+.contact-column {
+  margin-bottom: 20px; 
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 5px; 
+}
+
+.contact-column p {
+  margin: 30px;
+  display: inline-block;
+}
+
+.contact-info {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-right: 40px;
+}
+
+.contact-info h4{
+  margin-top: 20px;
+}
+
+/* Styling the footer's left section */
+
+.footer-left-section img {
+    max-width: 100px; 
+    margin-bottom: 10px;
+}
+
+.footer-left-section p {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-left-section a {
+    color: white;
+    text-decoration: underline;
+    font-style: bold;
+}
+
+/* Styling the footer's social icons */
+
+.footer-social-icons {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+}
+
+.footer-social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 10px;
+  border: 2px solid white; 
+}
+
+.footer-social-icon img {
+  width: 30px; 
+  height: auto;
+  filter: invert(100%); 
+}
+
+/* Styling the right part of the footer */
+.footer-right-product-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.footer-right-product img {
+  width: 100px; 
+  height: auto; 
+  margin-right: 20px;
+}
+
+.footer-right-product-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-right-product-rating {
+  display: flex;
+  align-items: center;
+}
+
+.footer-right-product-stars {
+  color: gray;
+}
+
+.footer-right-product-price {
+  margin-left: 10px;
+}
+
+/* Styling the footer's end section */
+.footer-end-section {
+  flex: 1;
+  width: 30%;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-right;
+  margin-left: 30px;
+}
+
+.footer-end-section img {
+  width: 20px;
+  height: auto; 
+  margin-right: 100px;
+  filter: invert(100%); 
+}
+
+.twitter-unavailable {
+  color: gray;
+  font-size: 15px; 
+  margin-top: 10px;
+}
+
+.twitter-follow-us{
+  color: gray;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+/* Styling the second footer */
+.dark-footer-second-part {
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+  border-bottom: 1px solid gray; 
+}
+
+.second-footer-section {
+  width: 25%; 
+  margin-top: 10px;
+}
+
+.second-footer-section h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.second-footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.second-footer-section ul li {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+/* Styling the third footer */
+.footer-third-part{
+  display:flex;
+  position: relative;
+  background-color: #333;
+  color: white;
+  border-top: 1px solid gray; 
+}
+
+.footer-left-third-part{
+ text-align: left;
+ width: 50%;
+}
+
+.footer-third-part p::before {
+  content: "\00A9"; 
+  margin-right: 5px; 
+}
+
+.footer-third-part p{
+  color: gray;
+  font-size: 15px;
+  font-style: normal;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Styling the third part on the right of the footer */
+.footer-right-third-part {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; 
+  width: 50%;
+}
+
+.footer-right-third-part img {
+  width: 50px; 
+  height: 50px; 
+  margin-left: 10px; 
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  background-color: #888; 
+  padding: 5px; 
+  filter: invert(100%); 
+}
