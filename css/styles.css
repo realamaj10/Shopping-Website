@@ -1,36 +1,54 @@
-*{
-  margin: 0;
+*{  /*This selector targets all elements on the page.*/
+  margin: 0; 
+  /*sets the margin of all elements to 0.
   padding: 0;
+  /*sets the padding of all elements to 0.*/
   box-sizing: border-box;
+  /*sets the box-sizing property to border-box for 
+  all elements.
+ */
 }
 
 body{
   font-family: Arial, sans-serif;
+  /*sets the font Arial of sans-serif family */
 }
 
 /* Styling the header*/
 header {
-  background-color: #ffffff;
+  background-color: #ffffff;/*setting background color to white */
   padding: 10px 20px;
+  /*adds padding of 10 pixels on the top and bottom, and 20 pixels on the left and right sides of the header. */
   display: flex;
+  /*sets the display property to flex, enabling flexbox layout for the header.*/
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
 }
 
 /*Styling the language and currency selectors*/
+/*The header is separated into class=”language-currency” and class=”top-right”. */
 .language-currency,
 .top-right {
+  /*A flex container is created and displayed as a flexbox
+  and the items are aligned in the center positioning language
+  currency class on the left and top right class on the right*/
   display: flex;
   align-items: center;
 }
 
 .language-selector,
 .currency-selector {
+  /*A comma is used to select elements from the same class.
+   The same styles should apply to both.*/
   margin-right: 10px;
+  /*margin on the right is set to 10px*/
   display: flex;
   align-items: center;
   background-color: #ffffff; 
   padding: 5px; 
+  /*this sets padding of 5 pixels around the content of
+   elements. It creates space between the content and the 
+   edges of the elements.*/
 }
 
 .currency-selector {
@@ -42,21 +60,32 @@ header {
 }
 
 .top-right > span {
+  /*: This targets <span> elements that are 
+  direct children of elements with the class .top-right.*/
   margin-right: 10px;
 }
 
 .separator {
   margin: 0 5px;
+  /*sets the top and bottom margins to 0 pixels 
+  and the left and right margins to 5 pixels. 
+  This means there will be no vertical space above or 
+  below the elements and 5 pixels of space on their left 
+  and right sides.*/
 }
 
-nav ul {
+nav ul { /*nav is an HTML element for navigation links and ul is unorderder list*/
   list-style-type: none;
+/* Removes the default bullet points 
+  displayed before the list elements */
   display: flex;
+  /*sets display mode to flex enabling flex layout*/
 }
 
 nav ul li {
   margin-right: 10px;
   cursor: pointer;
+  /*changes the cursor when hovering over the element */
   font-weight: normal; 
   color: #808080; 
 }
@@ -74,6 +103,7 @@ nav ul li {
 
 header span {
   color: #808080;
+  /*color of the seperators*/
 }
 
 /*Styling the search bar, phone logo and the other logos*/ 
@@ -83,12 +113,16 @@ header span {
   display: flex;
   align-items: center;
   padding: 5px 10px;
+  /*sets padding of 5 pixels on the top and bottom
+   and 10 pixels on the left and right */
 }
 
 .search-bar input[type="text"] {
-  border: none;
-  background: none;
-  outline: none;
+  /*styling elements with class search-bar
+  and iput elements with type text*/
+  border: none; /*removes border around input */
+  background: none; /*removes any background color */
+  outline: none; /*removes the outline when input is focused*/
 }
 
 .search-bar img{
@@ -96,8 +130,13 @@ header span {
   width: 20px; 
   height: 20px; 
 }
+
 .phone-logo {
   display: inline-flex;
+  /*sets the display mode to inline-flex for elements 
+  with the class .phone-logo. These elements can adjust 
+  their content horizontally while maintaining 
+  their inline nature.*/
   align-items: right; 
   margin-right: 0px; 
 }
@@ -109,8 +148,13 @@ header span {
 
 .call-us {
   display: flex;
+  /*sets the display mode of elements with the class 
+  .call-us to flex container*/
   flex-direction: column; 
+  /*child elements of this class will be aligned vertically
+  on top of each other*/
   align-items: flex-end;
+  /*aligns child elements to the right of container*/
 }
 
 .call-us-text {
@@ -138,6 +182,7 @@ header span {
   height: 20px; 
 }
 
+
 /* Styling the navigation row */ 
 
 .navigation-row {
@@ -147,10 +192,12 @@ header span {
 }
 
 .navigation-row ul {
-  list-style-type: none;
+  list-style-type: none;/*removes bullet points before elements*/
   margin: 0;
   padding: 0;
   display: inline-flex; 
+  /*sets display mode to inlineflex, where elements remain
+  inline but flexible horizontally*/
   align-items: center; 
 }
 
@@ -159,22 +206,23 @@ header span {
 }
 
 .navigation-row li:last-child {
+  /*styles last list element in class navigation-row*/
   margin-right: 0; 
+  /*this removes previous right margin 20px and makes it 0*/
 }
 
 .navigation-row a {
+  /*styling the link element*/
   text-decoration: none;
+  /*removes the default underline decoration from links*/
   color: #ffffff; 
+  /*this element is positioned relative*/
   position: relative;
-}
-
-.navigation-row a span {
-  margin-left: 5px; 
-  font-size: 12px;  
 }
 
 .navigation-row .buy a {
   color: #ff9966; 
+  /*sets color of link element with class buy to peach color*/
 }
 
 /* Styling the image row */ 
@@ -184,23 +232,30 @@ header span {
 
 .image-container {
   width: 100%;
+  /*fits the entire row*/
 }
 
 .image-container img {
   width: 100%;
   height: auto;
 }
-
+/*:before and :after are pseudo-elements used to add 
+decorative symbols before and after the image row */
 .image-row::before,
 .image-row::after {
   content: "<";
   color: gray; 
   font-size: 24px; 
   position: absolute; 
-  top: 50%; 
-  transform: translateY(-50%); 
+  top: 50%; /*positioning at center*/
+  transform: translateY(-50%); /*positioning at center*/
   display: inline-block;
+  /*displays pseudo-elements to be inline with the 
+  content of the element while still having block-level 
+  properties*/
   line-height: 1; 
+  /*sets the line height 
+  to be normal with value 1.*/
 }
 
 .image-row::after {
@@ -213,7 +268,6 @@ header span {
 }
 
 /* Styling the text overlayed in the image */
-
 .text-overlay {
   position: absolute;
   top: 50%;
@@ -277,13 +331,21 @@ header span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+/*Distributes space evenly between flex items, 
+  placing them at the start and end edges of the container*/
   padding: 10px 20px;
+  /*adds padding 10px on top and bottom and 20px on left 
+  and right*/
   width: calc(80% - 40px);
-  margin: 0 auto; 
+  /*sets the width to 80% of the parent element's width 
+  minus 40 pixels*/
+  margin: 0 auto;
+  /*left and right margin are set to auto*/ 
   position: relative; 
 }
 
 .additional-row::after {
+  /*adds a bottom border after additional row*/
   content: '';
   position: absolute;
   left: 0;
@@ -315,15 +377,19 @@ header span {
   margin: 0 10px; 
 }
 
-/* Styling container that is made of table container which includes left table and bottom table */
+/* Styling container that is made of table container 
+which includes left table and bottom table */
 
 .container {
+  /*displays the elements of class container as a flex 
+  container with a row layout.*/
   display: flex;
   flex-direction: row;
   position: relative;
 }
 
 .container::after {
+  /*sets border after container*/
   content: '';
   position: absolute;
   bottom: 0;
@@ -332,9 +398,13 @@ header span {
   height: 0.5px; 
   background-color: gray; 
   z-index: -1;
+  /* element will be positioned behind other elements.*/
 }
 
 .table-container {
+  /*table container will be displayed as a flex container
+  with a column layout and will fit only 20% width of the
+  container class*/
   display: flex;
   flex-direction: column;
   width: 20%;
@@ -343,10 +413,10 @@ header span {
 .left-table,
 .bottom-table {
   flex: 1;
+  /*occupy equal parts of class tables-container*/
 }
 
 /* Styling left table */
-
 .left-table {
   display: block;
   width: 50%;
@@ -358,9 +428,11 @@ header span {
 }
 
 .left-table tr.peach {
+  /*styling table row*/
   background-color:coral;
   color: #fff; 
   font-display:inherit;
+  /*inherited from parent elements*/
   font-size: larger;
 }
 
@@ -368,22 +440,6 @@ header span {
   padding: 10px; 
   border-left: 1px solid #808080; 
   border-bottom: 1px solid #808080;
-}
-
-.left-table td:not(:last-child) {
-  border-right: 1px solid #808080; 
-}
-
-.left-table tr.peach td:not(:first-child) {
-  border-left: none;
-}
-
-.left-table tr:last-child td {
-  border-bottom: 1px solid #808080;
-}
-
-.left-table tr td:first-child {
-  padding-left: 20px; 
 }
 
 .left-table tr td:first-child img {
@@ -401,7 +457,6 @@ header span {
 }
 
 /* Styling bottom table */
-
 .bottom-table {
   margin-top: 1px; 
   background-color: white;
@@ -447,7 +502,8 @@ header span {
   display: block; 
 }
 
-/* Styling .recent-products-container that includes recent-products class and product-row class */
+/* Styling .recent-products-container that 
+includes recent-products class and product-row class */
 .recent-products-container{
   display: flex;
   flex-direction: column;
@@ -478,6 +534,8 @@ header span {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /*flex items can wrap onto multiple lines if there 
+  is not enough space within the flex container.*/
 }
 
 .product {
@@ -520,6 +578,7 @@ header span {
 .banner-row {
   display: flex;
   justify-content: space-between;
+  /*evenly distributes flex items, in this case images*/
   margin-top: 20px;
 }
 
@@ -549,6 +608,7 @@ header span {
 
 .banner-text-overlay p {
   margin: 5px 0;
+  /*5px topright and 0px bottomleft*/
 }
 
 .color-text {
@@ -562,6 +622,7 @@ header span {
 }
 
 .banner-shop-now {
+  /*styling button*/
   background-color: black;
   color: white;
   border: none;
@@ -571,7 +632,6 @@ header span {
 }
 
 /* Styling sale row */
-
 .sale-row {
   margin-bottom: 20px; 
   margin-top: 20px; 
@@ -596,7 +656,8 @@ header span {
 }
 
 
-/* Styling images on sale row which includes the images and the information below them */
+/* Styling images on sale row which includes the images 
+and the information below them */
 
 .images-on-sale-row {
   display: flex;
@@ -664,10 +725,12 @@ header span {
 }
 
 /* Styling the big banner with text overlayed */
-
  .big-banner {
   position: relative;
+  /*element positioned relative to its normal position 
+  in document flow*/
   overflow: hidden;
+  /*hides content that may overflow the boundaries of element*/
 }
 
 .big-banner img {
@@ -679,7 +742,7 @@ header span {
   position: absolute;
   top: 50%;
   left: 40%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);/*centering element*/
   color: white;
   text-align: left;
 }
@@ -801,7 +864,6 @@ header span {
   color: black;
 }
 
-
 /* Styling the subscription row */
 
 .subscribe-row {
@@ -873,8 +935,8 @@ header span {
   position: relative;
   border-bottom: 1px solid gray; 
   background-color: #333; 
-    color: #fff; 
-    padding: 20px;
+  color: #fff; 
+  padding: 20px;
 }
 
 .footer-left-section {
@@ -894,12 +956,13 @@ header span {
 }
 
 /* Styling the footer's contact column */
-
 .contact-column {
   margin-bottom: 20px; 
   display: grid;
   grid-template-columns: repeat(2, 2fr);
+  /*creates two grid columns with equal space*/
   gap: 5px; 
+  /*5px gap horizontally and vertically*/
 }
 
 .contact-column p {
@@ -918,7 +981,6 @@ header span {
 }
 
 /* Styling the footer's left section */
-
 .footer-left-section img {
     max-width: 100px; 
     margin-bottom: 10px;
@@ -938,7 +1000,6 @@ header span {
 }
 
 /* Styling the footer's social icons */
-
 .footer-social-icons {
   display: flex;
   justify-content: left;
