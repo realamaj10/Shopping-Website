@@ -71,7 +71,7 @@
         <img src="css/images/person.png" alt="Person Logo" />
         <img src="css/images/heart.png" alt="Heart Logo" />
         <img src="css/images/bag.png" alt="Shopping Cart Logo" />
-        <span>&lt;</span>
+        <span id="cart-count">0</span>
       </div>
     </div>
 
@@ -119,60 +119,56 @@
       <div class="info-item">ACTIONS</div>
     </div>
     
-    <div class="wishlist-item-row">
+    <div class="wishlist-item-row" id="item1">
       <div class="wishlist-item-column">
-        <img src="css/images/wishlist1.jpg" alt="Men Watch">
-      </div>
-        <div class="wishlist-item-column">
-          <div class="description">Men Watch</div>
-        </div>
-      <div class="wishlist-item-column">$17.90
+        <img src="css/images/wishlist1.jpg" alt="Men Watch" />
       </div>
       <div class="wishlist-item-column">
-        In stock
+        <div class="description">Men Watch</div>
       </div>
+      <div class="wishlist-item-column price">$17.90</div>
+      <div class="wishlist-item-column stock-status">In stock</div>
       <div class="wishlist-item-column">
         <div class="actions">
-        <button class="quick-view-btn">QUICK VIEW</button>
-        <button class="add-to-cart-btn">ADD TO CART</button>
-      </div>
+          <button class="quick-view-btn" data-id="1">QUICK VIEW</button>
+          <button class="add-to-cart-btn" data-id="1">ADD TO CART</button>
+        </div>
       </div>
     </div>
     
-    <div class="wishlist-item-row">
+    <div class="wishlist-item-row" id="item2">
       <div class="wishlist-item-column">
-        <img src="css/images/wishlist2.jpg" alt="Men Cap">
+        <img src="css/images/wishlist2.jpg" alt="Men Cap" />
       </div>
       <div class="wishlist-item-column">
         <div class="description">Men Cap</div>
       </div>
-      <div class="wishlist-item-column">$17.90</div>
-      <div class="wishlist-item-column">In stock</div>
+      <div class="wishlist-item-column price">$17.90</div>
+      <div class="wishlist-item-column stock-status">In stock</div>
       <div class="wishlist-item-column">
         <div class="actions">
-        <button class="quick-view-btn">QUICK VIEW</button>
-        <button class="select-option-btn">SELECT OPTION</button>
+          <button class="quick-view-btn" data-id="2">QUICK VIEW</button>
+          <button class="add-to-cart-btn" data-id="2">ADD TO CART</button>
+        </div>
       </div>
     </div>
-    </div>
     
-
-    <div class="wishlist-item-row">
+    <div class="wishlist-item-row" id="item3">
       <div class="wishlist-item-column">
-        <img src="css/images/wishlist3.jpg" alt="Men Black Gentle Belt">
+        <img src="css/images/wishlist3.jpg" alt="Men Black Gentle Belt" />
       </div>
       <div class="wishlist-item-column">
         <div class="description">Men Black Gentle Belt</div>
       </div>
-      <div class="wishlist-item-column">$17.90</div>
-      <div class="wishlist-item-column">In stock</div>
+      <div class="wishlist-item-column price">$17.90</div>
+      <div class="wishlist-item-column stock-status">In stock</div>
       <div class="wishlist-item-column">
         <div class="actions">
-        <button class="quick-view-btn">QUICK VIEW</button>
-        <button class="select-option-btn">SELECT OPTION</button>
+          <button class="quick-view-btn" data-id="3">QUICK VIEW</button>
+          <button class="select-option-btn" data-id="3">SELECT OPTION</button>
+        </div>
       </div>
-      </div>
-    </div>
+    </div>    
     
     <footer class="dark-footer">
       <div class="footer-left-section">
@@ -323,6 +319,6 @@
     
     </footer>
 
-    <script src="javascript/index.js"></script>
+    <script src="javascript/wishlist.js"></script>
   </body>
 </html>

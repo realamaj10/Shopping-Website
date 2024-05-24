@@ -219,7 +219,69 @@ header span {
   color: #ff9966; 
 }
 
-/* Styling my cart row */
+/* Styling my cart from wishlist */
+.cart-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-header h3 {
+  margin: 0;
+  margin-right: 5px; 
+}
+
+#cart-count {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #333;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+#cart-items {
+  padding: 20px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+}
+
+.cart-item p {
+  margin-right: 10px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #ff1a1a;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+/* Styling cart row */
 .cart-row {
   background-color: #f2f2f2; 
   text-align: center; 
@@ -479,6 +541,61 @@ header span {
   padding: 15px 0;
   width: 100%;
   font-weight: bold;
+}
+
+/* Styling the cart list */
+#cart-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling individual cart items */
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item-image {
+  flex: 0 0 100px; /* Set width for the image column */
+  margin-right: 20px;
+}
+
+.cart-item-image img {
+  width: 100%;
+  height: auto;
+}
+
+.cart-item-details {
+  flex-grow: 1; /* Allow details to take remaining space */
+}
+
+.cart-item-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.cart-item-price {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.cart-item-quantity {
+  margin-bottom: 5px;
+}
+
+.cart-item-actions {
+  flex: 0 0 100px; /* Set width for the actions column */
+}
+
+.cart-item-remove {
+  color: #f00;
+  cursor: pointer;
+}
+
+.cart-item-remove:hover {
+  text-decoration: underline;
 }
 
 /*STYLING THE FOOTER*/
